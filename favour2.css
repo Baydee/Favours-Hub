@@ -1,0 +1,572 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+    
+    body{
+      justify-content: center;
+      background-color: rgb(147, 20, 147);
+    }
+    .delet{
+      
+    }
+    .header{
+      top:0;
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+      display: flex;
+      align-items: center;
+      padding: 20px 5%;
+      z-index: 100;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .done{
+     text-decoration: none;
+     font-size: 50px;
+     font-weight: bolder;
+     color:rgb(147, 20, 147) ;
+     font-family: 'Dancing Script', cursive;
+    }
+    nav a {
+      position: relative;
+      font-size: 20px;
+      font-weight: bolder;
+      text-decoration: none;
+      padding:6px 20px;
+      margin: 0px 20px;
+      transition: .5s;
+      color:rgb(147, 20, 147) ;
+    }
+    nav a:hover{
+      color:rgb(147, 20, 147) ;
+    }
+    nav a:hover span, 
+    #why
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border-bottom: 4px solid rgb(147, 20, 147) ;
+      border-radius: 15px;
+      transform: scale(1) translateY(0);
+      opacity:1;
+      transition: .5s;
+      background-color: white;
+      color:white;
+    }
+    
+    .hm {
+      border-radius: 15%;
+      margin-left: 70px;
+      
+    }
+    body .cap {
+      position: absolute;
+      z-index: -20000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      padding-top: 200px;
+      height: 100vh;
+      width: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .check{
+      font-size:100px;
+      color:rgb(147, 20, 147);
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: bolder;
+      text-align: center;
+      position: relative;
+      line-height: 85px;
+    }
+    .chills{
+    
+      font-size:40px;
+      margin-top: 40px;
+      color:rgb(82, 6, 82);
+      font-family: 'Dancing Script', cursive;
+      font-weight: bolder;
+      position: relative;
+      align-content: center;
+      text-align: center;
+      padding: 0% 10% 10% 10%;
+    }
+    .cyber{
+      padding-left:30px;
+      padding-top: 50px;
+    }
+    .swiper-slide{
+      font-size:40px ;
+      text-align: center;
+    }
+    .mouse{
+    justify-content: center;
+    margin:7% 15% 0% 15%;
+    padding: 10%;
+    /* border: 20px solid #000; */
+    border-radius: 100px;
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    }
+    #about{
+      z-index: 100px;
+      position: absolute;
+      padding-top: 100000px;
+    }
+    
+    .fontss{
+      padding:50px;
+      margin:50px;
+    }
+    .keys{
+      color:rgb(147, 20, 147);
+     font-weight: bolder;
+    }
+    
+    .panel{
+      font-size: 40px;
+      padding:10%;
+      background-color:rgb(147, 20, 147) ;
+      font-family: 'Dancing Script', cursive;
+      position: absolute;
+      z-index: -20000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .fall{
+      margin-left: auto;
+    }
+    .icon{
+      display: none;
+      font-size: 50px;
+    }
+    nav #fell #gone {
+      position: absolute;
+      top: 0;
+      font-size: 50px;
+      margin-left:auto;
+      display: none;
+      right:0;
+      margin-top: 20px;
+    }
+    @media(max-width:1300px){
+      #check{
+        font-size: 60px;
+      }
+      #chills{
+        font-size:30px;
+        padding-top: 0px;
+      }
+    }
+    @media(max-width:900px){
+      #cap {
+        position: absolute;
+        z-index: -20000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #hm{
+        margin-left: 0;
+      }
+    }
+    @media(max-width:770px){
+      #hm{
+        border-radius: 10%;
+        width: 100%;
+        height: 370px;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+      #cap{
+        margin-top: 0;
+        padding-top: 100px;
+      }
+      #cyber{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+      #check{
+        padding-top:0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+      #chills{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    @media(max-width:430px){
+      .fall {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-bottom: 60px;
+        flex-direction: column;
+      }
+      
+      #fall a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+        margin-bottom: 150px;
+      }
+      #panel{
+        font-size: 27px;
+        background-color:rgb(147, 20, 147) ;
+        font-family: 'Dancing Script', cursive;
+        position: absolute;
+        z-index: -20000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .icon{
+        display: block;
+        font-size: 40px;
+        color: rgb(147, 20, 147) ;
+      }
+      nav #pin {
+        position: relative;
+        font-size: 1.1em;
+        font-weight: bolder;
+        text-decoration: none;
+        transition: .5s;
+        color:rgb(147, 20, 147) ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .swiper-slide{
+        font-size:25px ;
+        text-align: center;
+      }
+      .mouse{
+        justify-content: center;
+        margin:50% 15% 0% 15%;
+        padding: 5%;
+        /* border: 20px solid #000; */
+        border-radius: 50px;
+        box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+        }
+    
+        .fontss{
+          padding:70px 10px 70px 10px;
+          margin:30px 0px 50px 0px;
+        }
+        #cap {
+          position: absolute;
+          z-index: -20000;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100vh;
+          width: 100%; 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        #hm {
+          border-radius: 10%;
+          width: 100%;
+          height: 200px;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+        #check{
+          font-size:40px;
+          color:rgb(147, 20, 147);
+          font-family: 'Frank Ruhl Libre', serif;
+          font-weight: bolder;
+          text-align: center;
+          position: relative;
+          line-height: 50px;
+        }
+        #chills{
+    
+          font-size:20px;;
+          color:rgb(82, 6, 82);
+          font-family: 'Dancing Script', cursive;
+          font-weight: bolder;
+          position: relative;
+          align-content: center;
+          text-align: center;
+          
+        }
+        .cyber{
+          padding: 2%;
+          margin: 20px;
+        }
+        #done{
+          font-size:30px;
+        }
+        #fell{
+          font-size:30px;
+        }
+        #header{
+          padding: 0px 5%;
+        }
+      }
+    
+      @media(max-width:400px){
+        #hm{
+          border-radius: 10%;
+          width: 100%;
+          height: 250px;
+          margin-left: 0;
+        }
+        #cap{
+          margin-top: 0;
+          padding-top: 90px;
+        }
+        #cyber{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        #check{
+          padding-top:0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          font-size: 30px;
+          margin-top: 0px;
+        }
+        #chills{
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          margin-top:0px;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        #done{
+          font-size:30px;
+        }
+        #fell{
+          font-size:30px;
+        }
+        #header{
+          padding: 0px 5%;
+        }
+        #panel{
+            font-size: 27px;
+            background-color:rgb(147, 20, 147) ;
+            font-family: 'Dancing Script', cursive;
+            position: absolute;
+            z-index: -20000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+      }
+    
+      @media(max-width:400px){
+        #hm{
+          border-radius: 10%;
+          width: 100%;
+          height: 250px;
+          margin-left: 0;
+        }
+        #cap{
+          margin-top: 0;
+          padding-top: 90px;
+        }
+        #cyber{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        #check{
+          padding-top:0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          font-size: 30px;
+          margin-top: 0px;
+        }
+        #chills{
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          margin-top:0px;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        #done{
+          font-size:30px;
+        }
+        #fell{
+          font-size:30px;
+        }
+        #header{
+          padding: 0px 5%;
+        }
+        #panel{
+            font-size: 27px;
+            background-color:rgb(147, 20, 147) ;
+            font-family: 'Dancing Script', cursive;
+            position: absolute;
+            margin-top: 60px;
+            z-index: -20000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+      }
+    
+    
+      
+      @media(max-width:370px){
+        #hm{
+          border-radius: 10%;
+          width: 100%;
+          height: 200px;
+          margin-left: 0;
+        }
+        #cap{
+          margin-top: 0;
+          padding-top: 90px;
+        }
+        #cyber{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        #check{
+          padding-top:0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          font-size: 30px;
+          margin-top: 0px;
+        }
+        #chills{
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          margin-top:0px;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        #panel{
+            font-size: 27px;
+            background-color:rgb(147, 20, 147) ;
+            font-family: 'Dancing Script', cursive;;
+            position: absolute;
+            z-index: -20000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top:150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+      }
+
+      @media(max-width:360px){
+        #hm{
+          border-radius: 10%;
+          width: 100%;
+          height: 200px;
+          margin-left: 0;
+        }
+        #cap{
+          margin-top: 0;
+          padding-top: 90px;
+        }
+        #cyber{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        #check{
+          padding-top:0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          font-size: 30px;
+          margin-top: 0px;
+        }
+        #chills{
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          margin-top:0px;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+        #panel{
+            font-size: 27px;
+            background-color:rgb(147, 20, 147) ;
+            font-family: 'Dancing Script', cursive;;
+            position: absolute;
+            z-index: -20000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top:200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+      }

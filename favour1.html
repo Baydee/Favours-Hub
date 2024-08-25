@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>Beyond Security</title>
+    <link rel="icon" href="camera.png">
+    <link rel="stylesheet" href="Favour.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script&family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="rgb(147, 20, 147)">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/6347445409.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <p class="body">
+      <header class="header" >
+        <div>
+          <a href="index.html" class="done" id="done"><p class="delet"></p>Favour's Hub<p></p></a>
+        </div>
+        <nav  class="fall" id="fall">
+          <a href="javascript:void(0)" class="closebtn" id="fell"onclick="closeNav()"><i class="fa-solid fa-xmark" id="gone"></i></a>
+          <a href="index.html"id="pin">HOME<span></span></a>
+          <a href="Favour1.html" id="pin">HINTS<span id="why"></span></a>
+          <a href="Favour2.html"id="pin">ABOUT<span></span></a>
+        </nav>   
+        <a href="javascript:void(0);" class="icon" id="icon"onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </header>
+    </p>
+    <!-- <div class="cap">
+     <div> <img src="lock1.png" alt="camera" id="hm"></div>
+     <div class="cyber">
+      <div class="check">Welcome to <br>Favour's hub</div>
+      <div class="chills">Like a determined cyber security student,<br> I aspire to achieve great feats in the digital realm,<br> proving that even a small girl can rise to the <br>occasion, earning the respect and pride of those who underestimate my potential.</div>
+     </div> -->
+  
+  </div >
+    <div class="potato">
+      <div class="mouse" >
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="keys">Strong Passwords: </div>Create complex, unique passwords for each account using a mix of upper and lower case letters, numbers, and symbols. Change them regularly.                                                                                                                                                    </div>
+            <div class="swiper-slide"><div class="keys">Two-Factor Authentication (2FA): </div>Enable 2FA wherever possible. This adds an extra layer of security by requiring a second verification step, such as a code from your phone.</div>
+            <div class="swiper-slide"><div class="keys">Update Software: </div>Regularly update your operating system, apps, and antivirus software. Updates often contain critical security patches</div>
+            <div class="swiper-slide"><div class="keys">Phishing Awareness: </div>Be cautious of unsolicited emails, links, or attachments. Don't share personal or financial information unless you're certain of the sender's legitimacy.</div>
+            <div class="swiper-slide"><div class="keys">Secure Wi-Fi: </div>Use strong encryption for your Wi-Fi network and change the default router password.</div>
+            <div class="swiper-slide"><div class="keys">Firewall Protection: </div>Activate a firewall to block unauthorized access to your network.</div>
+            <div class="swiper-slide"><div class="keys">Data Backups: </div>Regularly back up your data to an external source to prevent loss from ransomware or hardware failures.</div>
+            <div class="swiper-slide"><div class="keys">Privacy Settings: </div>Adjust privacy settings on social media and limit the information you share online.</div>
+            <div class="swiper-slide"><div class="keys">Safe Browsing: </div>Use a reputable antivirus software and browser extensions to block malicious websites and downloads.</div>
+            <div class="swiper-slide fontss">Get Help from an Offical if you can't find your intended Solution Here</div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="panel" id="contact-info"> Cybersecurity personnel play a pivotal role in defending digital systems against evolving threats, including hackers and malware. They are responsible for identifying vulnerabilities, implementing security measures, and leading incident responses. To excel in this field, they typically hold degrees in computer science, relevant certifications, and possess strong technical and analytical skills. An ethical approach is paramount, especially for those involved in ethical hacking and ensuring the ongoing security of organizations and individuals in the digital age.</div> -->
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("fall").style.width = "100%";
+      document.getElementById("gone").style.display="flex";
+      document.getElementById("fall").style.display="flex";
+    }
+    
+    function closeNav() {
+      document.getElementById("fall").style.width = "0px";
+    }
+    </script>
+</html> 
